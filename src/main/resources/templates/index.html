@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<style>
+    .main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+</style>
+
+<div class="main">
+    <div style="align-content: center">
+        <span>欢迎试用测试版音乐下载工具</span>
+        <form action="#" th:action="@{/api/getListByMusicB}"method="post">
+           用户id：<input type="text" name="uid" />
+            <input type="submit" />
+        </form>
+    </div>
+
+</div>

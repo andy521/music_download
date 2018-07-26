@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<style>
+    .main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+</style>
+<div class="main">
+<table>
+    <tr>
+        <th>歌单名字</th>
+        <th>操作</th>
+        <!--<th>歌单大小</th>-->
+    </tr>
+    <tr th:each="prod : ${prods}">
+        <td th:text="${prod.name}">Onions</td>
+        <!--<td th:text="${prod.price}">2.41</td>-->
+        <td><a href="play_list.html" th:href="@{/api/getPlayListB(playId=${prod.id})}"><span th:text="${prod.id}"></span></a></td>
+        <!--<td th:text="${prod.inStock}? #{true} : #{false}">yes</td>-->
+    </tr>
+</table>
+</div>

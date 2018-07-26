@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<style>
+    .main{
+        left: 0;
+        right: 0;
+        top:0;
+        bottom: 0;
+    }
+</style>
+<div class="main">
+<table border="1">
+    <tr>
+        <th>歌单名字</th>
+        <th>操作</th>
+        <!--<th>歌单大小</th>-->
+    </tr>
+    <tr th:each="prod : ${prods}">
+        <td th:text="${prod.name}">Onions</td>
+        <td><a href="result.html" target="_blank" th:href="@{/api/downloadMusic(name=${prod.name})}">下载</a></td>
+        <!--<td th:text="${prod.price}">2.41</td>-->
+        <!--<td th:text="${prod.inStock}? #{true} : #{false}">yes</td>-->
+    </tr>
+</table>
+</div>

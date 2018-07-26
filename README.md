@@ -5,8 +5,8 @@
 代码借鉴网络，如有雷同，可以理解。感觉侵权，尽快通知，进行删除。
 由于是近期制作，后期不定期进行更新，功能简陋，旨在能用。
 支持打赏：
+<div align=center>
+<img width="150" src="https://github.com/jiangzhendong/music_download/raw/master/pic/QQ20180726-1.jpg"/>
 
-![微信](https://github.com/jiangzhendong/music_download/raw/master/pic/QQ20180726-1.jpg)
-
-
-![支付宝](https://github.com/jiangzhendong/music_download/raw/master/pic/QQ20180726-0.jpg)
+<img width="150" src="https://github.com/jiangzhendong/music_download/raw/master/pic/QQ20180726-0.jpg"/>
+</div>

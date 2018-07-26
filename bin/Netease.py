@@ -3,12 +3,6 @@ import requests, hashlib, sys, click, re, base64, binascii, json, os
 from Crypto.Cipher import AES
 from http import cookiejar
 
-"""
-Website:http://cuijiahua.com
-Author:Jack Cui
-Refer:https://github.com/darknessomi/musicbox
-"""
-
 class Encrypyed():
 	"""
 	解密算法

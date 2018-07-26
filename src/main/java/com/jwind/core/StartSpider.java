@@ -10,7 +10,6 @@ import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 
 import java.io.BufferedReader;
-import java.io.Console;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -106,7 +105,6 @@ public class StartSpider {
      */
     public static String getUserMusicList(String uid) {
         try {
-//          String uid = "73289068";
             UrlParamPair upp = Api.getPlaylistOfUser(uid);
             String req_str = upp.getParas().toJSONString();
             String userAgent = getUserAgent();
